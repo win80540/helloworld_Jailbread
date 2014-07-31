@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		368EB5DB1978BC6B007E6CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368EB5DA1978BC6B007E6CB0 /* Foundation.framework */; };
+		368EB5E61978BC6B007E6CB0 /* helloworld.mm in Sources */ = {isa = PBXBuildFile; fileRef = 368EB5E51978BC6B007E6CB0 /* helloworld.mm */; };
+		368EB5F11978BCFB007E6CB0 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 368EB5F01978BCFB007E6CB0 /* libsubstrate.dylib */; };
+		368EB5F31978BD23007E6CB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368EB5F21978BD23007E6CB0 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		368EB5D71978BC6B007E6CB0 /* helloworld.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = helloworld.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		368EB5DA1978BC6B007E6CB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		368EB5DF1978BC6B007E6CB0 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		368EB5E01978BC6B007E6CB0 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		368EB5E21978BC6B007E6CB0 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		368EB5E31978BC6B007E6CB0 /* helloworld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "helloworld-Prefix.pch"; sourceTree = "<group>"; };
+		368EB5E41978BC6B007E6CB0 /* helloworld.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = helloworld.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		368EB5E51978BC6B007E6CB0 /* helloworld.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = helloworld.mm; sourceTree = "<group>"; };
+		368EB5EA1978BC6B007E6CB0 /* helloworld.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = helloworld.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/helloworld.plist; sourceTree = "<group>"; };
+		368EB5F01978BCFB007E6CB0 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		368EB5F21978BD23007E6CB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		368EB5D31978BC6B007E6CB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368EB5F31978BD23007E6CB0 /* UIKit.framework in Frameworks */,
+				368EB5F11978BCFB007E6CB0 /* libsubstrate.dylib in Frameworks */,
+				368EB5DB1978BC6B007E6CB0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		368EB5CC1978BC6B007E6CB0 = {
+			isa = PBXGroup;
+			children = (
+				368EB5DC1978BC6B007E6CB0 /* helloworld */,
+				368EB5D91978BC6B007E6CB0 /* Frameworks */,
+				368EB5D81978BC6B007E6CB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		368EB5D81978BC6B007E6CB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				368EB5D71978BC6B007E6CB0 /* helloworld.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		368EB5D91978BC6B007E6CB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				368EB5F21978BD23007E6CB0 /* UIKit.framework */,
+				368EB5F01978BCFB007E6CB0 /* libsubstrate.dylib */,
+				368EB5DA1978BC6B007E6CB0 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		368EB5DC1978BC6B007E6CB0 /* helloworld */ = {
+			isa = PBXGroup;
+			children = (
+				368EB5E41978BC6B007E6CB0 /* helloworld.xm */,
+				368EB5E51978BC6B007E6CB0 /* helloworld.mm */,
+				368EB5DD1978BC6B007E6CB0 /* Package */,
+				368EB5E11978BC6B007E6CB0 /* Supporting Files */,
+			);
+			path = helloworld;
+			sourceTree = "<group>";
+		};
+		368EB5DD1978BC6B007E6CB0 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				368EB5DE1978BC6B007E6CB0 /* DEBIAN */,
+				368EB5E71978BC6B007E6CB0 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		368EB5DE1978BC6B007E6CB0 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				368EB5DF1978BC6B007E6CB0 /* control.txt */,
+				368EB5E01978BC6B007E6CB0 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		368EB5E11978BC6B007E6CB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				368EB5E21978BC6B007E6CB0 /* PackageVersion.plist */,
+				368EB5E31978BC6B007E6CB0 /* helloworld-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		368EB5E71978BC6B007E6CB0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				368EB5E81978BC6B007E6CB0 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		368EB5E81978BC6B007E6CB0 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				368EB5E91978BC6B007E6CB0 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		368EB5E91978BC6B007E6CB0 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				368EB5EA1978BC6B007E6CB0 /* helloworld.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		368EB5D41978BC6B007E6CB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		368EB5D61978BC6B007E6CB0 /* helloworld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368EB5ED1978BC6B007E6CB0 /* Build configuration list for PBXNativeTarget "helloworld" */;
+			buildPhases = (
+				368EB5D11978BC6B007E6CB0 /* ShellScript */,
+				368EB5D21978BC6B007E6CB0 /* Sources */,
+				368EB5D31978BC6B007E6CB0 /* Frameworks */,
+				368EB5D41978BC6B007E6CB0 /* Headers */,
+				368EB5D51978BC6B007E6CB0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = helloworld;
+			productName = helloworld;
+			productReference = 368EB5D71978BC6B007E6CB0 /* helloworld.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		368EB5CD1978BC6B007E6CB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 368EB5D01978BC6B007E6CB0 /* Build configuration list for PBXProject "helloworld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 368EB5CC1978BC6B007E6CB0;
+			productRefGroup = 368EB5D81978BC6B007E6CB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				368EB5D61978BC6B007E6CB0 /* helloworld */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		368EB5D11978BC6B007E6CB0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		368EB5D51978BC6B007E6CB0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		368EB5D21978BC6B007E6CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368EB5E61978BC6B007E6CB0 /* helloworld.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		368EB5EB1978BC6B007E6CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		368EB5EC1978BC6B007E6CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		368EB5EE1978BC6B007E6CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "helloworld/helloworld-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		368EB5EF1978BC6B007E6CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "helloworld/helloworld-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		368EB5D01978BC6B007E6CB0 /* Build configuration list for PBXProject "helloworld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368EB5EB1978BC6B007E6CB0 /* Debug */,
+				368EB5EC1978BC6B007E6CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368EB5ED1978BC6B007E6CB0 /* Build configuration list for PBXNativeTarget "helloworld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368EB5EE1978BC6B007E6CB0 /* Debug */,
+				368EB5EF1978BC6B007E6CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 368EB5CD1978BC6B007E6CB0 /* Project object */;
+}
